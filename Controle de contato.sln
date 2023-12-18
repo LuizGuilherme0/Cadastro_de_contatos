@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle de contato", "Controle de contato\Controle de contato.csproj", "{9BE67655-995B-48F9-9151-BC3549FD9464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BE67655-995B-48F9-9151-BC3549FD9464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE67655-995B-48F9-9151-BC3549FD9464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE67655-995B-48F9-9151-BC3549FD9464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE67655-995B-48F9-9151-BC3549FD9464}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {980AA2B8-2461-49D8-BBF1-2045FAE80583}
+	EndGlobalSection
+EndGlobal

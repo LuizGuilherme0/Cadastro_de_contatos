@@ -1,0 +1,60 @@
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\bin\Debug\net8.0\appsettings.json
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\bin\Debug\net8.0\Controle de contato.staticwebassets.runtime.json
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\bin\Debug\net8.0\Controle de contato.exe
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\bin\Debug\net8.0\Controle de contato.deps.json
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\bin\Debug\net8.0\Controle de contato.runtimeconfig.json
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\bin\Debug\net8.0\Controle de contato.dll
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\bin\Debug\net8.0\Controle de contato.pdb
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.AssemblyInfoInputs.cache
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.AssemblyInfo.cs
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.csproj.CoreCompileInputs.cache
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.RazorAssemblyInfo.cache
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.RazorAssemblyInfo.cs
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\staticwebassets\msbuild.Controle de contato.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\staticwebassets\msbuild.build.Controle de contato.props
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Controle de contato.props
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Controle de contato.props
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\scopedcss\bundle\Controle de contato.styles.css
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\scopedcss\projectbundle\Controle de contato.bundle.scp.css
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.dll
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\refint\Controle de contato.dll
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.pdb
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\Controle de contato.genruntimeconfig.cache
+C:\Users\Uilson\Desktop\Controle de contato\Controle de contato\obj\Debug\net8.0\ref\Controle de contato.dll
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\Debug\net8.0\appsettings.json
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\Debug\net8.0\Controle de contato.staticwebassets.runtime.json
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\Debug\net8.0\Controle de contato.exe
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\Debug\net8.0\Controle de contato.deps.json
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\Debug\net8.0\Controle de contato.runtimeconfig.json
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\Debug\net8.0\Controle de contato.dll
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\Debug\net8.0\Controle de contato.pdb
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.AssemblyInfoInputs.cache
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.AssemblyInfo.cs
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.csproj.CoreCompileInputs.cache
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.RazorAssemblyInfo.cache
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.RazorAssemblyInfo.cs
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\staticwebassets\msbuild.Controle de contato.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\staticwebassets\msbuild.build.Controle de contato.props
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Controle de contato.props
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Controle de contato.props
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\scopedcss\bundle\Controle de contato.styles.css
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\scopedcss\projectbundle\Controle de contato.bundle.scp.css
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.dll
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\refint\Controle de contato.dll
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.pdb
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.genruntimeconfig.cache
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\ref\Controle de contato.dll
