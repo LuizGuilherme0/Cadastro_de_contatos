@@ -1,3 +1,7 @@
+using Controle_de_contato.Data;
+using Microsoft.EntityFrameworkCore;
+using MySqlConnector;
+
 namespace Controle_de_contato
 {
     public class Program
@@ -7,8 +11,18 @@ namespace Controle_de_contato
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContextPool<BancoContext>(o => o.UseMySql(Configuration.GetConnectionString("conexaoMySQL")));
+            
 
+            /*string mySqlConnection =
+                          //builder.Configuration.GetConnectionString("conexaoMySQL");
+
+            builder.Services.AddDbContextPool<BancoContext>(options =>
+            options.UseMySql(mySqlConnection,
+            ServerVersion.AutoDetect(mySqlConnection)));*/
+
+            builder.Services.AddControllersWithViews();
+            
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
