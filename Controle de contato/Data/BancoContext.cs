@@ -1,7 +1,8 @@
 ﻿
 
+
+
 using Controle_de_contato.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace Controle_de_contato.Data
 {

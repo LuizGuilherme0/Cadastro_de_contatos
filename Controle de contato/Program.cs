@@ -11,15 +11,22 @@ namespace Controle_de_contato
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContextPool<BancoContext>(o => o.UseMySql(Configuration.GetConnectionString("conexaoMySQL")));
-            
+            /*builder.Services.AddDbContextPool<BancoContext>(o => o.UseMySql(Configuration.GetConnectionString("conexaoMySQL")));*/
+
 
             /*string mySqlConnection =
-                          //builder.Configuration.GetConnectionString("conexaoMySQL");
+                          builder.Configuration.GetConnectionString("conexaoMySQL");
 
             builder.Services.AddDbContextPool<BancoContext>(options =>
             options.UseMySql(mySqlConnection,
             ServerVersion.AutoDetect(mySqlConnection)));*/
+
+            var connectionString = builder.Configuration.GetConnectionString("MySqlConn");
+
+            builder.Services.AddDbContext<BancoContext>(options =>
+            {
+                options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString));
+            });
 
             builder.Services.AddControllersWithViews();
             
