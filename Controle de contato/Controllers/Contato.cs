@@ -13,7 +13,8 @@ namespace Controle_de_contato.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            List<ContatoModel> contatos = _contatoRepositorio.BuscarTodos();
+            return View(contatos);
         }
 
         public IActionResult Criar()

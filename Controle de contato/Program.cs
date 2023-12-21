@@ -1,4 +1,5 @@
 using Controle_de_contato.Data;
+using Controle_de_contato.Repositorio;
 using Microsoft.EntityFrameworkCore;
 using MySqlConnector;
 
@@ -27,6 +28,7 @@ namespace Controle_de_contato
             {
                 options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString));
             });
+            builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
 
             builder.Services.AddControllersWithViews();
             
