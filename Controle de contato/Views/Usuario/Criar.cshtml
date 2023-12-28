@@ -1,0 +1,57 @@
+﻿@using Controle_de_contato.Enums
+@model UsuarioModel
+
+@{
+    ViewData["Title"] = "criar Usuario";
+}
+
+<div class="text-center">
+
+    <h1 class="display-4">Cadastrar Usuario</h1>
+
+</div>
+
+<form asp-controller="Usuario" asp-action="Criar" method="post">
+    <div class="form-group">
+        <label for="Nome" class="form-label">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do Usuario">
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="Email" class="form-label">Email</label>
+        <input type="text" asp-for="Email" class="form-control" placeholder="Digite o email do Usuario">
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="Login" class="form-label">Login</label>
+        <input type="text" asp-for="Login" class="form-control" placeholder="Digite o login do Usuario">
+        @Html.ValidationMessageFor(x => x.Login)
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="Perfil" class="form-label">Perfil</label>
+        <select asp-for="Perfil" class="form-control">
+            <option value="0">Selecione</option>
+            <option value="@PerfilEnum.Admin">Administrador</option>
+            <option value="@PerfilEnum.Padrao">Padrão</option>
+        </select>
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="Senha" class="form-label">Senha</label>
+        <input type="password" asp-for="Senha" class="form-control" placeholder="Digite a senha do Usuario">
+        @Html.ValidationMessageFor(x => x.Senha)
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary mb-2">Adicionar</button>
+    <br />
+    <a class="btn btn-secondary" asp-controller="Usuario" asp-action="Index" role="button">Voltar</a>
+</form>
+
+
