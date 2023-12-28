@@ -29,6 +29,7 @@ namespace Controle_de_contato
                 options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString));
             });
             builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
+            builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
             builder.Services.AddControllersWithViews();
             

@@ -8,7 +8,12 @@
 
 
 $(document).ready(function () {
-    $('#table-contatos').DataTable({
+    getDataTable('#table-contatos');
+    getDataTable('#table-usuarios');
+});
+
+function getDataTable(id) {
+    $(id).DataTable({
         "ordering": true,
         "paging": true,
         "searching": true,
@@ -36,7 +41,7 @@ $(document).ready(function () {
             }
         }
     });
-});
+}
 
 
 
