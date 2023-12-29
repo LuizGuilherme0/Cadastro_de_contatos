@@ -18,10 +18,10 @@ namespace Controle_de_contato.Controllers
             return View(usuarios);
         }
 
-        public IActionResult Criar()
+        /*public IActionResult Criar()
         {
             return View();
-        }
+        }*/
 
         [HttpPost]
         public IActionResult Criar(UsuarioModel Usuario)
@@ -32,7 +32,7 @@ namespace Controle_de_contato.Controllers
                 {
 
                     Usuario = _UsuarioRepositorio.Adicionar(Usuario);
-                    TempData["mensagemSucesso"] = "Usuario cadastrado com sucesso!";
+                    TempData["mensagemSucesso"] = "Usuário cadastrado com sucesso!";
                     return RedirectToAction("Index");
                 }
 
@@ -41,7 +41,77 @@ namespace Controle_de_contato.Controllers
 
             catch (Exception erro)
             {
-                TempData["mensagemErro"] = $"Ops, não conseguimos cadastrar seu Usuario, tente novamente, detalhe do erro: {erro.Message}";
+                TempData["mensagemErro"] = $"Ops, não conseguimos cadastrar seu usuário, tente novamente, detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+        }
+
+       public IActionResult Editar(int id)
+        {
+            UsuarioModel Usuario = _UsuarioRepositorio.ListarPorId(id);
+            return View(Usuario);
+        }
+
+        public IActionResult ApagarConfirmacao(int id)
+        {
+            UsuarioModel Usuario= _UsuarioRepositorio.ListarPorId(id);
+            return View(Usuario);
+        }
+
+
+        public IActionResult Apagar(int id)
+        {
+            try
+            {
+                bool apagado = _UsuarioRepositorio.Apagar(id);
+                if (apagado)
+                {
+                    TempData["mensagemSucesso"] = "Usuário apagado com sucesso!";
+
+                }
+
+                else
+                {
+                    TempData["mensagemErro"] = $"Ops, não conseguimos apagar seu usuário, tente novamente.";
+                }
+
+                return RedirectToAction("Index");
+            }
+            catch (Exception erro)
+            {
+                TempData["mensagemErro"] = $"Ops, não conseguimos apagar seu usuário, tente novamente, detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Alterar(UsuarioSemSenhaModel UsuarioSemSenhaModel)
+        {
+            try
+            {
+                UsuarioModel Usuario = null;
+                if (ModelState.IsValid)
+                {
+                    Usuario = new UsuarioModel()
+                    {
+                        Id = UsuarioSemSenhaModel.Id,
+                        Nome = UsuarioSemSenhaModel.Nome,
+                        Email = UsuarioSemSenhaModel.Email,
+                        Login = UsuarioSemSenhaModel.Login,
+                        Perfil = UsuarioSemSenhaModel.Perfil
+                    };
+
+                    Usuario = _UsuarioRepositorio.Atualizar(Usuario);
+                    TempData["mensagemSucesso"] = "O Usuário foi alterado com sucesso!";
+                    return RedirectToAction("Index");
+                }
+
+                return View("Editar", Usuario);
+            }
+
+            catch (Exception erro)
+            {
+                TempData["mensagemErro"] = $"Ops, não conseguimos atualizar seu usuário, tente novamente, detalhe do erro: {erro.Message}";
                 return RedirectToAction("Index");
             }
         }
