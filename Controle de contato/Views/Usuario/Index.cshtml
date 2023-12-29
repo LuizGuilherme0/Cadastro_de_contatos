@@ -40,6 +40,7 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Login</th>
                 <th scope="col">Email</th>
+                <th scope="col">Perfil</th>
                 <th scope="col">Data de Cadastro</th>
                 <th scope="col"></th>
             </tr>
@@ -54,6 +55,7 @@
                         <td>@Usuario.Nome</td>
                         <td>@Usuario.Login</td>
                         <td>@Usuario.Email</td>
+                        <td>@(Usuario.Perfil == Controle_de_contato.Enums.PerfilEnum.Admin ? "Administrador" : "Padrão")</td>
                         <td>@Usuario.DataCadastro</td>
                         <td>
                             <div class="">

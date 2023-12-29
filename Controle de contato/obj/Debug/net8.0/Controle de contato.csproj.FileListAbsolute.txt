@@ -68,3 +68,4 @@ C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\De
 C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.csproj.AssemblyReference.cache
 C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\Controle de contato.csproj.CopyComplete
+C:\Users\Uilson\Documents\GitHub\Cadastro_de_contatos\Controle de contato\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutDeslogado.cshtml.rz.scp.css
