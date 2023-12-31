@@ -1,0 +1,65 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+
+body {
+    background-color: ActiveBorder;
+}
+
+.TitleLogin {
+    font-family: 'Diphylleia', serif;
+    color: cornflowerblue;
+    font-weight:bold;
+    margin-top:2rem;
+}
+
+.NameLogin {
+    color: cornflowerblue;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:1.5rem;
+    font-weight:400;
+}
+
+.NameSenha {
+    color: cornflowerblue;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.AvisoLogin {
+    color: azure;
+    font-family: 'Cousine', monospace;
+}
+
+#login{
+    font-size:1.2rem;
+}
+
+#senha {
+    font-size: 1.2rem;
+}
+
+.form {
+    height:50vh;
+}
+
+.form2 {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+}
+
+.BotaoLogin {
+    padding: 10px 0 10px 0;
+    font-size: 1.2rem;
+    font-family: 'Rufina', serif;
+    cursor:pointer;
+}
+
+    .BotaoLogin:hover {
+        background-color: #1e8c03;
+    }

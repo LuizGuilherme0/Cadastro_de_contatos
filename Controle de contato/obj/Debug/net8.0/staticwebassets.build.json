@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/0qXPXu2p1Uf0QZ72857YauC10LR5tQzCFs63O2eXNc=",
+  "Hash": "OjwSV5hdVW0EZCyUiyHztEkD0KPn0wuyMywfGWcYFxE=",
   "Source": "Controle de contato",
   "BasePath": "_content/Controle de contato",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Uilson\\Documents\\GitHub\\Cadastro_de_contatos\\Controle de contato\\wwwroot\\css\\TelaLogin.css",
+      "SourceId": "Controle de contato",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uilson\\Documents\\GitHub\\Cadastro_de_contatos\\Controle de contato\\wwwroot\\",
+      "BasePath": "_content/Controle de contato",
+      "RelativePath": "css/TelaLogin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\TelaLogin.css"
     },
     {
       "Identity": "C:\\Users\\Uilson\\Documents\\GitHub\\Cadastro_de_contatos\\Controle de contato\\wwwroot\\favicon.ico",

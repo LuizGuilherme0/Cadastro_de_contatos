@@ -1,4 +1,5 @@
 using Controle_de_contato.Data;
+using Controle_de_contato.Helper;
 using Controle_de_contato.Repositorio;
 using Microsoft.EntityFrameworkCore;
 using MySqlConnector;
@@ -28,8 +29,18 @@ namespace Controle_de_contato
             {
                 options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString));
             });
+
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             builder.Services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
             builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+            builder.Services.AddScoped<ISessao, Sessao>();
+
+            builder.Services.AddSession(o =>
+            {
+                o.Cookie.HttpOnly = true;
+                o.Cookie.IsEssential = true;
+            });
 
             builder.Services.AddControllersWithViews();
             
@@ -45,6 +56,8 @@ namespace Controle_de_contato
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",

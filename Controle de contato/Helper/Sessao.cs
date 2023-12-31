@@ -25,12 +25,12 @@ namespace Controle_de_contato.Helper
         public void CriarSessaoDoUsuario(UsuarioModel usuario)
         {
             string valor = JsonConvert.SerializeObject(usuario);
-            _httpContext.HttpContext.Session.SetString("sessaoUsuarrioLogado", valor);
+            _httpContext.HttpContext.Session.SetString("sessaoUsuarioLogado", valor);
         }
 
         public void RemoverSessaoUsuario()
         {
-            throw new NotImplementedException();
+            _httpContext.HttpContext.Session.Remove("sessaoUsuarioLogado");
         }
     }
 }

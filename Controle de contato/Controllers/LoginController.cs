@@ -1,4 +1,5 @@
-﻿using Controle_de_contato.Models;
+﻿using Controle_de_contato.Helper;
+using Controle_de_contato.Models;
 using Controle_de_contato.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -8,13 +9,26 @@ namespace Controle_de_contato.Controllers
     public class LoginController : Controller
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;
-        public LoginController(IUsuarioRepositorio usuarioRepositorio) 
+
+        private readonly ISessao _sessao;
+        public LoginController(IUsuarioRepositorio usuarioRepositorio, ISessao sessao) 
         {
             _usuarioRepositorio = usuarioRepositorio;
+            _sessao = sessao;
         }
         public IActionResult Index()
         {
+            // Se o usuário estiver logado, redirecionar para a home
+            if(_sessao.BuscarSessaoDoUsuario() != null) return RedirectToAction("Index", "Home");
+
             return View();
+        }
+
+        public IActionResult Sair()
+        {
+            _sessao.RemoverSessaoUsuario();
+
+            return RedirectToAction("Index", "Login");
         }
 
         [HttpPost]
@@ -30,7 +44,8 @@ namespace Controle_de_contato.Controllers
                     {
                         if (Usuario.SenhaValida(loginModel.senha))
                         {
-                        return RedirectToAction("Index", "Home");
+                            _sessao.CriarSessaoDoUsuario(Usuario);
+                            return RedirectToAction("Index", "Home");
 
                         }
 

@@ -5,7 +5,15 @@
     ViewData["Title"] = "Login";
 }
 
-<h1 class="text-center text-success" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Minha tela de login</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <link rel="stylesheet" href="~/css/TelaLogin.css" asp-append-version="true" />
+</head>
+
+<body>
+
+<h1 class="text-center  TitleLogin">Olá, Faça seu login</h1>
 
 @if (TempData["MensagemErro"] != null)
 {
@@ -16,20 +24,26 @@
 
 }
 
-<form asp-controller="Login" asp-action="Entrar" method="post">
+<form asp-controller="Login" asp-action="Entrar" method="post" class="form">
+    <div class="form2">
+
     <div class="mb-3">
-        <label for="login" class="form-label">Login</label>
+            <label for="login" class="form-label NameLogin">Login</label>
         <input type="text" asp-for="Login" class="form-control" id="login">
         @Html.ValidationMessageFor(x => x.Login)
-        <div id="emailHelp" class="form-text">Não compartilhar esse login com ninguém.</div>
+        <div id="emailHelp" class="form-text AvisoLogin">Não compartilhar esse login com ninguém.</div>
     </div>
     <div class="mb-3">
-        <label for="senha" class="form-label">Senha</label>
+        <label for="senha" class="form-label NameSenha">Senha</label>
         <input type="password" asp-for="senha" class="form-control" id="senha">
         @Html.ValidationMessageFor(x => x.senha)
     </div>
-
+    <br />
     <div class="text-center">
-    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+    <button type="submit" class="btn btn-primary w-100 BotaoLogin">Entrar</button>
+    </div>
     </div>
 </form>
+</body>
+</html>
+
