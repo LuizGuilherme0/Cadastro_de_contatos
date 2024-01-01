@@ -1,9 +1,11 @@
-﻿using Controle_de_contato.Models;
+﻿using Controle_de_contato.Filters;
+using Controle_de_contato.Models;
 using Controle_de_contato.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Controle_de_contato.Controllers
 {
+    [PaginaRestritaSomenteAdmin]
     public class Usuario : Controller
     {
         private readonly IUsuarioRepositorio _UsuarioRepositorio;

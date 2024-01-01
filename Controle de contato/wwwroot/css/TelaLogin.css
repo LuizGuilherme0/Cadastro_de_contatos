@@ -60,6 +60,6 @@ body {
     cursor:pointer;
 }
 
-    .BotaoLogin:hover {
-        background-color: #1e8c03;
-    }
+.BotaoLogin:hover {
+    background-color: #1e8c03;
+}
