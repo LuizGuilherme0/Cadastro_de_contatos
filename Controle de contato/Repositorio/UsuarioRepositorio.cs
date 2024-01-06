@@ -31,7 +31,8 @@ namespace Controle_de_contato.Repositorio
         {
             // gravar no banco de dados (ejetou o BancoContext com o método construtor)
 
-            Usuario.DataCadastro =DateTime.Now;
+            Usuario.DataCadastro = DateTime.Now;
+            Usuario.SetSenhaHash();
             _bancoContext.Usuarios.Add(Usuario);
             _bancoContext.SaveChanges();
 

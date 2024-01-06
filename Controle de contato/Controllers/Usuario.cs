@@ -20,10 +20,10 @@ namespace Controle_de_contato.Controllers
             return View(usuarios);
         }
 
-        /*public IActionResult Criar()
+        public IActionResult Criar()
         {
             return View();
-        }*/
+        }
 
         [HttpPost]
         public IActionResult Criar(UsuarioModel Usuario)

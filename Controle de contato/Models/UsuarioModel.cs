@@ -1,4 +1,5 @@
 ﻿using Controle_de_contato.Enums;
+using Controle_de_contato.Helper;
 using System.ComponentModel.DataAnnotations;
 
 namespace Controle_de_contato.Models
@@ -29,7 +30,12 @@ namespace Controle_de_contato.Models
 
         public bool SenhaValida(string senha)
         {
-            return Senha == senha;
+            return Senha == senha.GerarHash();
+        }
+
+        public void SetSenhaHash()
+        {
+            Senha = Senha.GerarHash();
         }
     }
 }
