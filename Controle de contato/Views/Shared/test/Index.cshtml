@@ -1,0 +1,24 @@
+﻿@model List<ContatoModel>
+
+@{
+    ViewData["Title"] = "Listagem de contatos";
+}
+
+@if (Model != null && Model.Any())
+{
+    foreach (ContatoModel contato in Model)
+    {
+        <tr>
+            <th scope="row">@contato.Id</th>
+            <td>@contato.Nome</td>
+            <td>@contato.Email</td>
+            <td>@contato.Celular</td>
+            <td>
+                <div class="">
+                    <a role="button" class="btn btn-primary me-1" asp-route-id="@contato.Id" asp-asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-route-id="@contato.Id" asp-asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </td>
+        </tr>
+    }
+}

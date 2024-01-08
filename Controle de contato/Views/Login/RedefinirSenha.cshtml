@@ -1,0 +1,53 @@
+﻿@model RedefinirSenhaModel
+
+@{
+    Layout = "_LayoutDeslogado";
+    ViewData["Title"] = "Redefinir a senha";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/TelaLogin.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <h1 class="text-center  TitleLogin">Olá, Faça seu login</h1>
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+            @TempData["MensagemErro"]
+        </div>
+
+    }
+
+    <form asp-controller="Login" asp-action="EnviarLinkParaRedefinirSenha" method="post" class="form">
+        <div class="form2">
+
+            <div class="mb-3">
+                <label for="login" class="form-label NameLogin">Login</label>
+                <input type="text" asp-for="Login" class="form-control" id="login">
+                @Html.ValidationMessageFor(x => x.Login)
+                <div id="emailHelp" class="form-text AvisoLogin">Não compartilhar esse login com ninguém.</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label NameSenha">Email</label>
+                <input type="text" asp-for="Email" class="form-control" id="email">
+                @Html.ValidationMessageFor(x => x.Email)
+            </div>
+            <br />
+
+            
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary w-100 BotaoLogin">Redefinir Senha</button>
+                <a class="btn btn-secondary" asp-controller="Login" asp-action="Index" role="button">Voltar</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
