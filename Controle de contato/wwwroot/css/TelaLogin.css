@@ -11,7 +11,7 @@ body {
     font-family: 'Diphylleia', serif;
     color: cornflowerblue;
     font-weight:bold;
-    margin-top:2rem;
+    
 }
 
 .NameLogin {
@@ -62,4 +62,24 @@ body {
 
 .BotaoLogin:hover {
     background-color: #1e8c03;
+}
+
+.EsqueceuSenha {
+    color: white;
+    font-family: 'Cousine', monospace;
+}
+
+.logo {
+    height: 93px;
+    width: 93px;
+    border: solid blue 4px;
+}
+
+.NavP2 {
+    height: 80px;
+}
+
+.NavP {
+    height: 100px;
+    background-color: ActiveBorder;
 }

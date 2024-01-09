@@ -8,7 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Imagens\c4a958d8cf52dcb987d6614115881536.jpg" />
+    <Content Remove="wwwroot\Imagens\8573556-vibrante-rosa-e-azul-v-letra-logo-conceito-criativo-minimal-monocromatico-monograma-com-linhas-e-impressao-padrao-padrao-vetor.jpg" />
+    <Content Remove="wwwroot\Imagens\letra-logotipo-plano-fundo-branco-simples-minimo_959624-199.avif" />
+    <Content Remove="wwwroot\Imagens\logotipo_da_nike.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Imagens\8573556-vibrante-rosa-e-azul-v-letra-logo-conceito-criativo-minimal-monocromatico-monograma-com-linhas-e-impressao-padrao-padrao-vetor.jpg" />
+    <None Include="wwwroot\Imagens\letra-logotipo-plano-fundo-branco-simples-minimo_959624-199.avif" />
+    <None Include="wwwroot\Imagens\logotipo_da_nike.jpg" />
   </ItemGroup>
 
   <ItemGroup>

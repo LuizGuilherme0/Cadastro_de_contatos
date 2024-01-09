@@ -11,22 +11,22 @@
     </div>
     <br />
 
-    @if(TempData["MensagemSucesso"] != null)
+    @if (TempData["MensagemSucesso"] != null)
     {
-    <div class="alert alert-success" role="alert">
-        <button  type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
-        @TempData["MensagemSucesso"]
-    </div>
-        
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+            @TempData["MensagemSucesso"]
+        </div>
+
     }
 
     @if (TempData["MensagemErro"] != null)
     {
-    <div class="alert alert-danger" role="alert">
-        <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
-        @TempData["MensagemErro"]
-    </div>
-        
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+            @TempData["MensagemErro"]
+        </div>
+
     }
 
     <br />
@@ -44,7 +44,7 @@
             </tr>
         </thead>
         <tbody>
-            @if(Model != null && Model.Any())
+            @if (Model != null && Model.Any())
             {
                 foreach (ContatoModel contato in Model)
                 {

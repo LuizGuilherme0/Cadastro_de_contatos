@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OjwSV5hdVW0EZCyUiyHztEkD0KPn0wuyMywfGWcYFxE=",
+  "Hash": "OsAzKJ7YGsounX9dBgqnWT2U/QrBPPq832NOxZ6UyNc=",
   "Source": "Controle de contato",
   "BasePath": "_content/Controle de contato",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Uilson\\Documents\\GitHub\\Cadastro_de_contatos\\Controle de contato\\wwwroot\\Imagens\\c4a958d8cf52dcb987d6614115881536.jpg",
+      "SourceId": "Controle de contato",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uilson\\Documents\\GitHub\\Cadastro_de_contatos\\Controle de contato\\wwwroot\\",
+      "BasePath": "_content/Controle de contato",
+      "RelativePath": "Imagens/c4a958d8cf52dcb987d6614115881536.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\c4a958d8cf52dcb987d6614115881536.jpg"
     },
     {
       "Identity": "C:\\Users\\Uilson\\Documents\\GitHub\\Cadastro_de_contatos\\Controle de contato\\wwwroot\\js\\site.js",
