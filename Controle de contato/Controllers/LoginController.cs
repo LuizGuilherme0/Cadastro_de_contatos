@@ -11,10 +11,14 @@ namespace Controle_de_contato.Controllers
         private readonly IUsuarioRepositorio _usuarioRepositorio;
 
         private readonly ISessao _sessao;
-        public LoginController(IUsuarioRepositorio usuarioRepositorio, ISessao sessao) 
+
+        private IEmail _email;
+
+        public LoginController(IUsuarioRepositorio usuarioRepositorio, ISessao sessao, IEmail email) 
         {
             _usuarioRepositorio = usuarioRepositorio;
             _sessao = sessao;
+            _email = email;
         }
         public IActionResult Index()
         {
@@ -81,13 +85,24 @@ namespace Controle_de_contato.Controllers
                     if (Usuario != null)
                     {
                         string novaSenha = Usuario.GerarNovaSenha();
-                        _usuarioRepositorio.Atualizar(Usuario);
+                        string mensagem = $"Sua nova senha é: {novaSenha}";
 
-                        TempData["mensagemSucesso"] = $"Enviamos para seu e-mail cadastrado uma nova senha";
+                        bool emailEnviado = _email.Enviar(Usuario.Email, "Sistema de Contatos - Nova Senha.", mensagem);
+
+                        if (emailEnviado)
+                        {
+                            _usuarioRepositorio.Atualizar(Usuario);
+                            TempData["mensagemSucesso"] = $"Enviamos para seu e-mail cadastrado uma nova senha.";
+                        }
+                        else
+                        {
+                            TempData["mensagemErro"] = $"Não conseguimos enviar e-mail. Por favor, tente novamente.";
+                        }
+       
                         return RedirectToAction("Index", "Login");
                     }
 
-                    TempData["mensagemErro"] = $"Não conseguimos redefinir sua senha. Por favor, verifique os dados informados";
+                    TempData["mensagemErro"] = $"Não conseguimos redefinir sua senha. Por favor, verifique os dados informados.";
                 }
 
                 return View("Index");
