@@ -11,6 +11,8 @@ namespace Controle_de_contato.Repositorio
         List<UsuarioModel> BuscarTodos();
         UsuarioModel Adicionar(UsuarioModel Usuario);
         UsuarioModel Atualizar(UsuarioModel Usuario);
+
+        UsuarioModel AlterarSenha(AlterarSenhaModel alterarSenhaModel);
         bool Apagar(int id);
     }
 }
